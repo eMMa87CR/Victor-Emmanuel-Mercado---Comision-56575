@@ -5,23 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmacia Roca</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <img src="/assets/img/logoFR.jpg" alt="logo farmacia roca" width="150" height="150" class="logo">
-        <h1>FARMACIA ROCA</h1>
-        <h6>Comodoro Rivadavia</h6>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a><!--intro--></li>
-                <li><a href="/html/nosotros.html">Acerca de nosotros</a><!--informacion de la farmacia--></li>
-                <li><a href="/html/servicios.html">Servicios ofrecidos</a><!--servicios--></li>
-                <li><a href="/html/consejos.html">Consejos de Salud</a><!--consejo de salud--></li>
-                <li><a href="/html/contacto.html">Contacto</a><!--contacto--></li>
-            </ul>
-        </nav>
+        <!--titulo-->
+        <section>
+            <div class="titulo">
+                <h1>FARMACIA ROCA</h1>
+            </div>
+        </section>
+        <!--menu navegacion-->
+        <section>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html"><img src="../assets/img/logoFR.jpg"
+                            alt="logo farmacia roca" width="100%" height="100px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/consejos.html">Consejos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
     </header>
     <main>
         <section>
@@ -30,15 +55,20 @@
                 <img src="/assets/img/frente.jpg" alt="farmacia roca foto de frente" width="1080"
                     height="auto"><!--imagen frente -->
                 <p>En Farmacia Roca, no solo somos una farmacia en línea, sino tu aliado dedicado al cuidado de la
-                    salud. Nos enorgullece proporcionarte acceso a productos farmacéuticos de alta calidad y servicios
+                    salud. Nos enorgullece proporcionarte acceso a productos farmacéuticos de alta calidad y
+                    servicios
                     diseñados exclusivamente para tu bienestar.</p>
             </article>
             <article>
-                <p>Estamos a tu disposición, ya sea que necesites información sobre nuestros productos, desees realizar
-                    un pedido o requieras asesoramiento farmacéutico. En Farmacia Roca, la atención personalizada va más
-                    allá de las palabras; es un compromiso que respaldamos con acciones. ¡Estamos ansiosos por servirte!
+                <p>Estamos a tu disposición, ya sea que necesites información sobre nuestros productos, desees
+                    realizar
+                    un pedido o requieras asesoramiento farmacéutico. En Farmacia Roca, la atención personalizada va
+                    más
+                    allá de las palabras; es un compromiso que respaldamos con acciones. ¡Estamos ansiosos por
+                    servirte!
                 </p>
-                <p>Explora nuestra farmacia digital y descubre la conveniencia de cuidar de tu salud desde la comodidad
+                <p>Explora nuestra farmacia digital y descubre la conveniencia de cuidar de tu salud desde la
+                    comodidad
                     de tu hogar. En Farmacia Roca, combinamos la experiencia farmacéutica con la accesibilidad
                     tecnológica para brindarte una experiencia integral en el cuidado de tu bienestar. ¡Te damos la
                     bienvenida a un viaje hacia una vida más saludable con Farmacia Roca!</p>
@@ -62,6 +92,12 @@
         </nav>
         <p>&copy; 2023 Farmacia Roca. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
