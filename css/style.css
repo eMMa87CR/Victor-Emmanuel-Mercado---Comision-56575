@@ -26,3 +26,6 @@ footer {
     background-color: rgba(34, 139, 34, 0.603);
     color: rgb(8, 8, 8);
 }
+a{
+text-decoration: none;
+}
