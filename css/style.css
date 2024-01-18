@@ -1,31 +1,3 @@
-/*fondo web*/
-html {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-/*encabezado*/
-/*titulo articulo*/
-header h1 {
-    font-size: 54px;
-    text-align: justify;
-    color: rgb(107, 150, 109);
-}
 
-h2 {
-    font-style: italic;
-    text-align: center;
-    color: aliceblue;
-}
-
-/*pie de pagina*/
-footer {
-    background-color: rgba(34, 139, 34, 0.603);
-    color: rgb(8, 8, 8);
-}
-a{
-text-decoration: none;
-}
+/*# sourceMappingURL=style.css.map */
