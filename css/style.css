@@ -1,3 +1,30 @@
+* {
+   margin: 0%;
+   padding: 0%;
+  
+}
 
+header {
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
 
-/*# sourceMappingURL=style.css.map */
+}
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    line-height: 1.6;
+}
+
+footer{
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
