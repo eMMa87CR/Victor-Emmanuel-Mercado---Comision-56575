@@ -1,0 +1,29 @@
+// Estilos para la sección principal
+main {
+    padding: 20px;
+
+    .container {
+        // Estilos generales del contenedor
+        max-width: 1200px;
+        margin: 0 auto;
+
+        // Estilos específicos para las tarjetas (cards)
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .card-title {
+                color: #007bff;
+            }
+
+            .card-text {
+                color: #555;
+            }
+        }
+    }
+}

@@ -5,37 +5,69 @@ body {
   padding: 0%;
 }
 
+body {
+  /*
+  * Created with https://www.css-gradient.com
+  * Gradient link: https://www.css-gradient.com/?c1=dadada&c2=ffffff&gt=l&gd=dtt
+  */
+  background: #dadada;
+  background: linear-gradient(180deg, #dadada, #ffffff);
+  font-family: "Arial", sans-serif;
+}
+
 /* Estilos para el título */
 .titulo {
   text-align: center;
   padding: 20px;
 }
 .titulo h1 {
-  color: #035207; /* Color del texto */
+  color: #05810b;
   margin: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /* Estilos para la barra de navegación */
 nav {
-  background-color: #f8f8f8; /* Color de fondo */
+  background-color: #f8f8f8;
 }
 nav .navbar-brand img {
-  max-height: 80px; /* Ajusta la altura del logo */
+  max-height: 80px;
 }
 nav .navbar-nav {
-  margin: 0 auto; /* Centra los elementos de la barra de navegación */
+  margin: 0 auto;
 }
 nav .navbar-nav .nav-item {
-  margin: 0 10px; /* Espaciado entre elementos del menú */
+  margin: 0 20px;
 }
 nav .navbar-nav .nav-item .nav-link {
-  color: #555; /* Color del texto del enlace */
+  color: #555;
   text-decoration: none;
-  transition: color 0.3s ease; /* Transición suave del color del texto */
+  transition: color 0.3s ease;
 }
 nav .navbar-nav .nav-item .nav-link:hover {
-  color: #007bff; /* Cambia el color del texto al pasar el ratón */
+  color: #0004ff;
+}
+
+main {
+  padding: 20px;
+}
+main .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .container .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+main .container .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main .container .card .card-title {
+  color: #007bff;
+}
+main .container .card .card-text {
+  color: #555;
 }
 
 /*# sourceMappingURL=style.css.map */

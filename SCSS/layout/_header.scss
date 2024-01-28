@@ -1,39 +1,46 @@
+// Variables
+$color-primario: #05810b; // Color verde
+$color-fondo-nav: #f8f8f8; // Color de fondo para la barra de navegación
+$color-texto-enlace: #555; // Color del texto del enlace
+$color-hover-enlace: #0004ff; // Color del texto del enlace al pasar el ratón
+$espaciado: 20px; // Espaciado común
 
 /* Estilos para el título */
 .titulo {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: $espaciado;
 
-    h1 {
-        color: #035207; /* Color del texto */
-        margin: 0;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+  h1 {
+    color: $color-primario;
+    margin: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
 }
 
 /* Estilos para la barra de navegación */
 nav {
-    background-color: #f8f8f8; /* Color de fondo */
+  background-color: $color-fondo-nav;
 
-    .navbar-brand img {
-        max-height: 80px; /* Ajusta la altura del logo */
-    }
+  .navbar-brand img {
+    max-height: 80px;
+  }
 
-    .navbar-nav {
-        margin: 0 auto; /* Centra los elementos de la barra de navegación */
+  .navbar-nav {
+    margin: 0 auto;
 
-        .nav-item {
-            margin: 0 10px; /* Espaciado entre elementos del menú */
+    .nav-item {
+      margin: 0 $espaciado;
 
-            .nav-link {
-                color: #555; /* Color del texto del enlace */
-                text-decoration: none;
-                transition: color 0.3s ease; /* Transición suave del color del texto */
+      .nav-link {
+        color: $color-texto-enlace;
+        text-decoration: none;
+        transition: color 0.3s ease;
 
-                &:hover {
-                    color: #007bff; /* Cambia el color del texto al pasar el ratón */
-                }
-            }
+        &:hover {
+          color: $color-hover-enlace;
         }
+      }
     }
+  }
 }
