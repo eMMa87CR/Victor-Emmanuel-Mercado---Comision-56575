@@ -1,22 +1,22 @@
 @import "../utilities/variables";
+
+// Estilos generales
 main {
   .container {
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: $espaciado;
+    padding: $espaciado;
 
-    // Estilos para la sección dentro del main
     section {
       // Estilos para la fila del título
       .row {
         &.title-row {
-            h2 {
-                font-size: 2rem;
-                color: $color-primario;
-                font-family: $text-font;
-                text-align: center;
-                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); // Sombra de texto
-              }
-              
+          h2 {
+            font-size: 2rem;
+            color: $color-primario;
+            font-family: $text-font;
+            text-align: center;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+          }
         }
       }
 
@@ -24,6 +24,7 @@ main {
       .row.arriba {
         .col-md-6 {
           img {
+            display: flex;
             max-width: 100%;
             height: auto;
             // Otros estilos según sea necesario
@@ -41,7 +42,7 @@ main {
       }
 
       // Estilos para la fila del texto adicional
-      .row:last-child {
+      &:last-child {
         .col-12 {
           p {
             font-size: $base-font-size;

@@ -1,6 +1,7 @@
+@import "../utilities/variables";
 // Estilos para la sección principal
 main {
-    padding: 20px;
+    padding: $espaciado;
 
     .container {
         // Estilos generales del contenedor
@@ -18,7 +19,7 @@ main {
             }
 
             .card-title {
-                color: #007bff;
+                color: $secondary-color;
             }
 
             .card-text {
