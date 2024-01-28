@@ -1,5 +1,41 @@
-* {
+@charset "UTF-8";
+/* Estilos generales */
+body {
   margin: 0%;
+  padding: 0%;
+}
+
+/* Estilos para el título */
+.titulo {
+  text-align: center;
+  padding: 20px;
+}
+.titulo h1 {
+  color: #035207; /* Color del texto */
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #f8f8f8; /* Color de fondo */
+}
+nav .navbar-brand img {
+  max-height: 80px; /* Ajusta la altura del logo */
+}
+nav .navbar-nav {
+  margin: 0 auto; /* Centra los elementos de la barra de navegación */
+}
+nav .navbar-nav .nav-item {
+  margin: 0 10px; /* Espaciado entre elementos del menú */
+}
+nav .navbar-nav .nav-item .nav-link {
+  color: #555; /* Color del texto del enlace */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transición suave del color del texto */
+}
+nav .navbar-nav .nav-item .nav-link:hover {
+  color: #007bff; /* Cambia el color del texto al pasar el ratón */
 }
 
 /*# sourceMappingURL=style.css.map */
