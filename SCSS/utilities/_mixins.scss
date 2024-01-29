@@ -1,0 +1,14 @@
+@mixin make-container($padding-x: 30px, $max-width: none) {
+  width: 100%;
+  max-width: $max-width; /* Agregado para controlar el ancho máximo */
+  padding: $padding-x $padding-x 0; /* Combina el relleno horizontal */
+  margin: auto;
+
+  @media (max-width: 768px) {
+    padding: $padding-x / 2; /* Ajusta el relleno para pantallas más pequeñas */
+  }
+  @supports (display: flex) {
+    display: flex;
+  }
+}
+

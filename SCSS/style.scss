@@ -1,6 +1,10 @@
+//layout
 @import "base/reset";
-@import "layout/body";
 @import "layout/header";
 @import "layout/main-index";
 @import "layout/main-nosotros";
 @import "layout/main-consejos";
+
+//utilities
+@import "utilities/variables";
+@import "utilities/mixins";
