@@ -116,4 +116,20 @@ main.container section p.btn.btn-primary {
   margin-top: 20px;
 }
 
+.button-base, .boton-top {
+  text-decoration: none;
+  background-color: #05810b;
+  font-size: 16px;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1.5px solid rgba(0, 4, 255, 0.5137254902);
+  color: white;
+  /* Efecto hover */
+}
+.button-base:hover, .boton-top:hover {
+  background-color: #035007; /* Oscurece el color de fondo */
+  border-color: rgba(0, 3, 179, 0.5137254902); /* Oscurece el color del borde */
+  cursor: pointer; /* Cambia el cursor a un puntero */
+}
+
 /*# sourceMappingURL=style.css.map */
