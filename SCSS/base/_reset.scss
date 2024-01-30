@@ -1,12 +1,7 @@
 /* Estilos generales */
 body {
-   // @include make-container(40px, 960px);// error mixins
-  /*
-  * Created with https://www.css-gradient.com
-  * Gradient link: https://www.css-gradient.com/?c1=dadada&c2=ffffff&gt=l&gd=dtt
-  */
+  //@include estilos-body;
+  //@include estilos-responsive;
   background: #dadada;
   background: linear-gradient(180deg, #dadada, #ffffff);
-  font-family: "Arial", sans-serif;
-  line-height: 1.5;
 }

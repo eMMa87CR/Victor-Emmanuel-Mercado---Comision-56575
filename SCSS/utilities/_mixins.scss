@@ -1,14 +1,33 @@
-@mixin make-container($padding-x: 30px, $max-width: none) {
-  width: 100%;
-  max-width: $max-width; /* Agregado para controlar el ancho máximo */
-  padding: $padding-x $padding-x 0; /* Combina el relleno horizontal */
-  margin: auto;
+// _mixins.scss
 
-  @media (max-width: 768px) {
-    padding: $padding-x / 2; /* Ajusta el relleno para pantallas más pequeñas */
+@mixin estilos-body {
+  font-family: $text-font;
+  font-size: $base-font-size;
+  line-height: 1.5;
+  color: $color-texto-enlace;
+  background-color: $color-fondo-nav;
+
+  // Establecer márgenes y padding
+  margin: $espaciado;
+  padding: $espaciado;
+
+  // Establecer estilos para enlaces
+  a {
+    color: $color-texto-enlace;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-hover-enlace;
+    }
   }
-  @supports (display: flex) {
-    display: flex;
-  }
+
+  // Otros estilos que desees aplicar al body
 }
 
+// Otros estilos responsive
+@mixin estilos-responsive {
+  @media screen and (max-width: 768px) {
+    // Estilos para dispositivos móviles
+    // Puedes agregar estilos específicos para tamaños de pantalla más pequeños aquí
+  }
+}
