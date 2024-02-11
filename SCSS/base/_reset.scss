@@ -1,5 +1,7 @@
 /* Estilos generales */
 body {
+  margin-top: $espaciado;
+  padding: $espaciado;
   background: #dadada;
   background: linear-gradient(180deg, #dadada, #ffffff);
 

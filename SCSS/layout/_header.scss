@@ -1,25 +1,25 @@
 @import "../utilities/variables";
+header{
+  margin-top: $espaciado;
+  padding: $espaciado;
+}
 /* Estilos para el título */
 .titulo {
   text-align: center;
   padding: $espaciado;
 
   h1 {
-   margin: 2rem;
-   padding: 2rem;
-   max-width: 1080px;
-
+    margin: 2rem;
+    padding: 2rem;
+    .img {
+      width: 50%;
+    }
   }
 }
 
 /* Estilos para la barra de navegación */
 nav {
   background-color: $color-fondo-nav;
-
-  .navbar-brand img {
-    max-height: 80px;
-  }
-
   .navbar-nav {
     margin: 0 auto;
 

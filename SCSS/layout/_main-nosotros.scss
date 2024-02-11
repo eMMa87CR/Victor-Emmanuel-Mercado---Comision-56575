@@ -5,8 +5,8 @@ main {
 
     .container {
         // Estilos generales del contenedor
-        max-width: 1200px;
-        margin: 0 auto;
+        margin-top: $espaciado;
+        padding: $espaciado;
 
         // Estilos específicos para las tarjetas (cards)
         .card {
