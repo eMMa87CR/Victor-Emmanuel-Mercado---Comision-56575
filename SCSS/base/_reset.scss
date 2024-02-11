@@ -1,11 +1,10 @@
 /* Estilos generales */
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
 body {
-  margin-top: $espaciado;
-  padding: $espaciado;
   background: #dadada;
   background: linear-gradient(180deg, #dadada, #ffffff);
-
-  @include estilos-responsive {
-    // Aquí puedes agregar los estilos específicos para dispositivos móviles y de escritorio
-  }
+  @include estilos-body;
+  @include estilos-responsive;
 }

@@ -1,8 +1,49 @@
 @charset "UTF-8";
 /* Estilos generales */
+a {
+  color: #555;
+  text-decoration: none;
+}
+a:hover {
+  color: #0004ff;
+}
+
 body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  background-color: #f8f8f8;
+  margin: 20px;
+  padding: 20px;
   background: #dadada;
   background: linear-gradient(180deg, #dadada, #ffffff);
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 12.8px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  body {
+    padding: 30px;
+    font-size: 19.2px;
+  }
+}
+
+/* Estilos generales */
+a {
+  color: #555;
+  text-decoration: none;
+}
+a:hover {
+  color: #0004ff;
+}
+
+header {
+  margin-top: 20px;
+  padding: 20px;
 }
 
 /* Estilos para el título */
@@ -11,17 +52,31 @@ body {
   padding: 20px;
 }
 .titulo h1 {
-  color: #05810b;
-  margin: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 1rem;
+  padding: 1rem;
+}
+.titulo h1 .img {
+  max-width: 100%;
+  max-height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .titulo h1 .img {
+    padding: 10px;
+    font-size: 12.8px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .titulo h1 .img {
+    padding: 30px;
+    font-size: 19.2px;
+  }
 }
 
 /* Estilos para la barra de navegación */
 nav {
   background-color: #f8f8f8;
-}
-nav .navbar-brand img {
-  max-height: 80px;
 }
 nav .navbar-nav {
   margin: 0 auto;
@@ -68,8 +123,8 @@ main {
   padding: 20px;
 }
 main .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
 }
 main .container .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -124,6 +179,14 @@ main.container section p.btn.btn-primary {
   background-color: #035007; /* Oscurece el color de fondo */
   border-color: rgba(0, 3, 179, 0.5137254902); /* Oscurece el color del borde */
   cursor: pointer; /* Cambia el cursor a un puntero */
+}
+
+a {
+  color: #555;
+  text-decoration: none;
+}
+a:hover {
+  color: #0004ff;
 }
 
 /*# sourceMappingURL=style.css.map */

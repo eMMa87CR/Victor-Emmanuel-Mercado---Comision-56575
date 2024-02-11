@@ -10,30 +10,30 @@
   // Establecer márgenes y padding
   margin: $espaciado;
   padding: $espaciado;
-
-  // Establecer estilos para enlaces
-  a {
-    color: $color-texto-enlace;
-    text-decoration: none;
-
-    &:hover {
-      color: $color-hover-enlace;
-    }
-  }
-
-  // Otros estilos que desees aplicar al body
 }
 
-// Otros estilos responsive
+// Establecer estilos para enlaces
+a {
+  color: $color-texto-enlace;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-hover-enlace;
+  }
+}
+
+// Estilos específicos para dispositivos móviles
 @mixin estilos-responsive {
   @media screen and (max-width: 768px) {
-    // Estilos para dispositivos móviles
-    // Puedes agregar estilos específicos para tamaños de pantalla más pequeños aquí
+    // Aquí puedes agregar estilos específicos para dispositivos móviles
+    padding: $espaciado * 0.5;
+    font-size: $base-font-size * 0.8;
   }
 
+  // Estilos específicos para dispositivos de escritorio
   @media screen and (min-width: 769px) and (max-width: 1200px) {
-    // Estilos para dispositivos de escritorio hasta 1200px de ancho
-    // Puedes agregar estilos específicos para tamaños de pantalla más grandes aquí
+    // Aquí puedes agregar estilos específicos para dispositivos de escritorio
+    padding: $espaciado * 1.5;
+    font-size: $base-font-size * 1.2;
   }
 }
-

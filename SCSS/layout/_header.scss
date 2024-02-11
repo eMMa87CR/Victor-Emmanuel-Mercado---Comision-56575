@@ -1,21 +1,33 @@
+/* Estilos generales */
 @import "../utilities/variables";
-header{
+@import "../utilities/mixins"; 
+// Estilos para el encabezado
+header {
   margin-top: $espaciado;
   padding: $espaciado;
 }
+
 /* Estilos para el título */
 .titulo {
   text-align: center;
   padding: $espaciado;
 
   h1 {
-    margin: 2rem;
-    padding: 2rem;
+    margin: 1rem; // Ajustar el margen para pantallas más pequeñas
+    padding: 1rem; // Ajustar el padding para pantallas más pequeñas
+
+    // Estilos para la imagen dentro del título
     .img {
-      width: 50%;
+      max-width: 100%; // Establecer el ancho máximo al 100% del contenedor
+      max-height: 200px; // Establecer una altura máxima (ajústala según tus necesidades)
+      display: block; // Asegurar que la imagen se comporte como un bloque
+      margin: 0 auto; // Centrar la imagen horizontalmente
+
+      @include estilos-responsive
     }
   }
 }
+
 
 /* Estilos para la barra de navegación */
 nav {
