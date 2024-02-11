@@ -30,4 +30,10 @@
     // Estilos para dispositivos móviles
     // Puedes agregar estilos específicos para tamaños de pantalla más pequeños aquí
   }
+
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    // Estilos para dispositivos de escritorio hasta 1200px de ancho
+    // Puedes agregar estilos específicos para tamaños de pantalla más grandes aquí
+  }
 }
+

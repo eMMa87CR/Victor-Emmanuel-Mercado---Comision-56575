@@ -1,7 +1,9 @@
 /* Estilos generales */
 body {
-  //@include estilos-body;
-  //@include estilos-responsive;
   background: #dadada;
   background: linear-gradient(180deg, #dadada, #ffffff);
+
+  @include estilos-responsive {
+    // Aquí puedes agregar los estilos específicos para dispositivos móviles y de escritorio
+  }
 }
