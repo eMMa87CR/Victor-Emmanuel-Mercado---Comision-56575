@@ -7,3 +7,10 @@ $color-hover-enlace: #0004ff; // Color del texto del enlace al pasar el ratón
 $espaciado: 20px; // Espaciado común
 $text-font: 'Arial', sans-serif; // Variable de texto
 $base-font-size: 16px; // Variable de tamaño de fuente
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);

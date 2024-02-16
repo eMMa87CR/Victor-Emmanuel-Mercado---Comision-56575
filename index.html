@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmacia Roca</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -23,116 +23,85 @@
 
 <body>
     <header>
-        <!--titulo-->
-        <section>
-            <div class="titulo">
-                <h1><img src="./assets/img/Logo Farmacia Azul.png" class="img-fluid" alt="banner-farmacia-roca"></h1>
-            </div>
-        </section>
-        <!--menu navegacion-->
-        <section>
-            <nav class="navbar navbar-expand-sm bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Inicio</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./html/nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./html/servicios.html">Servicios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./html/consejos.html">Consejos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./html/contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/assets/img/Logo Farmacia Azul.png" alt="logo farmacia roca" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/consejos.html">Consejos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </section>
+            </div>
+        </nav>
+
     </header>
+
     <main>
         <div class="container">
             <section>
-                <!-- Título -->
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-md-6">
                         <h2>¡Bienvenido a Farmacia Roca Tu Socio en Salud!</h2>
-                    </div>
-                </div>
-
-                <!-- Imagen frente y texto lateral -->
-                <div class="row arriba">
-                    <div class="col-md-6">
-                        <img src="./assets/img/frente.jpg" alt="Farmacia Roca - Foto de frente">
-                    </div>
-                    <div class="col-md-6">
                         <p>En Farmacia Roca, tenemos el compromiso de ofrecerte una farmacia en línea que sea tu mejor
                             opción para el cuidado de la salud. Contamos con productos farmacéuticos de la más alta
                             calidad y servicios personalizados para tu bienestar. Nuestra misión es brindarte una
                             experiencia de compra segura, rápida y fácil.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
                         <p>Estamos a tu disposición, ya sea que necesites información sobre nuestros productos, desees
                             realizar un pedido o requieras asesoramiento farmacéutico. En Farmacia Roca, la atención
                             personalizada va más allá de las palabras; es un compromiso que respaldamos con acciones.
                             ¡Estamos ansiosos por servirte!</p>
-                        <p>Explora nuestra farmacia digital y descubre la conveniencia de cuidar de tu salud desde la
-                            comodidad de tu hogar. En Farmacia Roca, combinamos la experiencia farmacéutica con la
-                            accesibilidad tecnológica para brindarte una experiencia integral en el cuidado de tu
-                            bienestar. ¡Te damos la bienvenida a un viaje hacia una vida más saludable con Farmacia
-                            Roca!</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./assets/img/frente.jpg" alt="Farmacia Roca - Foto de frente" class="img-fluid">
                     </div>
                 </div>
             </section>
         </div>
-        <!-- boton top -->
-        <p><a href="#top" class="boton-top">Volver arriba</a></p>
+            <!-- boton top -->
+            <p class="text-center mt-5"><a href="#top" class="btn btn-primary">Volver arriba</a></p>
     </main>
-    <footer class="bg-light text-center text-lg-start">
-        <div class="container p-4">
-            <!-- Redes sociales -->
+
+    <footer>
+        <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Nuestras redes:</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li><a href="http://wa.me/542976211211" target="_blank" class="text-dark"><i
-                                    class="fab fa-whatsapp"></i> WhatsApp</a></li>
-                        <li><a href="https://www.facebook.com/farm.roca/about" target="_blank" class="text-dark"><i
-                                    class="fab fa-facebook"></i> Facebook</a></li>
-                        <li><a href="https://www.instagram.com/farmacia.roca/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
-                                target="_blank" class="text-dark"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <h5>Nuestras redes:</h5>
+                    <ul>
+                        <li><a href="http://wa.me/542976211211" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="https://www.facebook.com/farm.roca/about" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/farmacia.roca/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
                     </ul>
                 </div>
-
-                <!-- Google Maps -->
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Ubicación en Google Maps:</h5>
+                <div class="col-lg-6 col-md-12">
+                    <h5>Ubicación en Google Maps:</h5>
                     <div class="mapa-container">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.607431845504!2d-67.52081392320468!3d-45.8791631365121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455265dc99cdd%3A0xbfd0316360d82286!2sFarmacia%20Roca!5e0!3m2!1ses-419!2sar!4v1706484884936!5m2!1ses-419!2sar"
-                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.607431845504!2d-67.52081392320468!3d-45.8791631365121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde455265dc99cdd%3A0xbfd0316360d82286!2sFarmacia%20Roca!5e0!3m2!1ses-419!2sar!4v1706484884936!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Derechos de autor -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            &copy; 2023 Farmacia Roca. Todos los derechos reservados.
+        <div class="text-center">
+            <p>&copy; 2023 Farmacia Roca. Todos los derechos reservados.</p>
         </div>
     </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

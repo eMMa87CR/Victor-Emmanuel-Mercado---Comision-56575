@@ -1,6 +1,6 @@
 /* Estilos generales */
 @import "../utilities/variables";
-@import "../utilities/mixins"; 
+@import "../utilities/mixins";
 // Estilos para el encabezado
 header {
   margin-top: $espaciado;
@@ -9,7 +9,7 @@ header {
 
 /* Estilos para el título */
 .titulo {
-  text-align: center;
+  text-align: justify;
   padding: $espaciado;
 
   h1 {
@@ -19,19 +19,23 @@ header {
     // Estilos para la imagen dentro del título
     .img {
       max-width: 100%; // Establecer el ancho máximo al 100% del contenedor
-      max-height: 200px; // Establecer una altura máxima (ajústala según tus necesidades)
+      max-height: auto; // Establecer una altura máxima automática para mantener la proporción de la imagen
       display: block; // Asegurar que la imagen se comporte como un bloque
       margin: 0 auto; // Centrar la imagen horizontalmente
-
-      @include estilos-responsive
+      @include estilos-responsive; // Incluir estilos responsive usando el mixin estilos-responsive
     }
   }
+}
+.navbar-brand {
+  @include estilos-responsive 
+  
 }
 
 
 /* Estilos para la barra de navegación */
 nav {
   background-color: $color-fondo-nav;
+
   .navbar-nav {
     margin: 0 auto;
 
@@ -41,7 +45,7 @@ nav {
       .nav-link {
         color: $color-texto-enlace;
         text-decoration: none;
-        transition: color 0.5s ease;
+        transition: color 1s ease;
 
         &:hover {
           color: $color-hover-enlace;

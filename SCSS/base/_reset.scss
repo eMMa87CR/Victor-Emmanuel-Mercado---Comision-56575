@@ -7,4 +7,5 @@ body {
   background: linear-gradient(180deg, #dadada, #ffffff);
   @include estilos-body;
   @include estilos-responsive;
+  @include make-container;
 }

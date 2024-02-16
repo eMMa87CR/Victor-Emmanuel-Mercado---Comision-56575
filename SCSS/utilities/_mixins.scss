@@ -37,3 +37,12 @@ a {
     font-size: $base-font-size * 1.2;
   }
 }
+
+@mixin make-container($padding-x: 10px) { // Cambia 10px al valor deseado si es diferente
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
