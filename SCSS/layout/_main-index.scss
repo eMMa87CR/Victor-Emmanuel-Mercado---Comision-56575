@@ -1,0 +1,38 @@
+// Estilos para el contenedor principal <main>
+.main-index {
+  // Estilos generales
+  padding: 20px; // Espaciado interior
+  margin-top: 20px; // Margen superior
+
+  // Estilos para los títulos <h2>
+  h2 {
+    color: $color-primario; // Color del título
+    font-size: 24px; // Tamaño de fuente del título
+    margin-bottom: 20px; // Margen inferior del título
+  }
+
+  // Estilos para los párrafos <p>
+  p {
+    font-size: 16px; // Tamaño de fuente del párrafo
+    line-height: 1.5; // Altura de línea del párrafo
+    margin-bottom: 15px; // Margen inferior del párrafo
+  }
+
+  // Estilos para las imágenes <img>
+  img {
+    max-width: 100%; // Imagen al ancho del contenedor
+    height: auto; // Altura automática
+    border-radius: 8px; // Borde redondeado
+    margin-bottom: 20px; // Margen inferior de la imagen
+  }
+
+  // Estilos para el botón de volver arriba
+  .boton-top {
+    margin-top: 30px; // Margen superior
+    a {
+      font-weight: bold; // Negrita
+      text-transform: uppercase; // Mayúsculas
+      letter-spacing: 1px; // Espaciado entre letras
+    }
+  }
+}

@@ -1,3 +1,32 @@
+.main-index {
+  padding: 20px;
+  margin-top: 20px;
+}
+.main-index h2 {
+  color: #05810b;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.main-index p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.main-index img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.main-index .boton-top {
+  margin-top: 30px;
+}
+.main-index .boton-top a {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .main-consejos {
   padding: 20px;
   margin-top: 20px;
