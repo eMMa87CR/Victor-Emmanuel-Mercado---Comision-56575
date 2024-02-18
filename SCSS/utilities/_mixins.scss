@@ -26,14 +26,18 @@
 
 // Estilos responsive
 @mixin estilos-responsive {
-  @media screen and (max-width: $breakpoint-sm) {
-    // Estilos para dispositivos móviles
-    // Puedes agregar estilos específicos para tamaños de pantalla más pequeños aquí
-  }
-
-  @media screen and (min-width: $breakpoint-md) {
-    // Estilos para dispositivos medianos
-  }
-
-  // Agregar más media queries según sea necesario
+    @media screen and (max-width: $breakpoint-sm) {
+      // Estilos para dispositivos móviles
+      // Puedes agregar estilos específicos para tamaños de pantalla más pequeños aquí
+      body {
+        font-size: 14px; // Ejemplo de estilo específico para pantallas pequeñas
+      }
+    }
+  
+    @media screen and (min-width: $breakpoint-md) {
+      // Estilos para dispositivos medianos
+      body {
+        font-size: 16px; // Ejemplo de estilo específico para pantallas medianas
+      }
+    }
 }

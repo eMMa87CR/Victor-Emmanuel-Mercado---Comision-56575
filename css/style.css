@@ -1,3 +1,52 @@
+.main-consejos {
+  padding: 20px;
+  margin-top: 20px;
+}
+.main-consejos h4 {
+  color: #05810b;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.main-consejos p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.main-consejos ul {
+  margin-left: 20px;
+}
+.main-consejos li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.consejos-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.consejos-item h4 {
+  color: #05810b;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.consejos-item p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.consejos-item ul {
+  margin-top: 10px;
+}
+.consejos-item li {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .mi-body {
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -21,6 +70,17 @@
 .mi-body a:hover {
   color: #0004ff;
 }
+@media screen and (max-width: 576px) {
+  .mi-body body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mi-body body {
+    font-size: 16px;
+  }
+}
+
 .boton-top {
   background-color: hsla(123, 93%, 26%, 0.382);
   color: #ffffff;

@@ -1,0 +1,56 @@
+.main-consejos {
+  padding: 20px; // Espaciado interior
+  margin-top: 20px; // Margen superior
+
+  h4 {
+    color: $color-primario; // Color del título
+    font-size: 24px; // Tamaño de fuente del título
+    margin-bottom: 10px; // Margen inferior del título
+  }
+
+  p {
+    font-size: 16px; // Tamaño de fuente del párrafo
+    line-height: 1.5; // Altura de línea del párrafo
+    margin-bottom: 15px; // Margen inferior del párrafo
+  }
+
+  ul {
+    margin-left: 20px; // Sangría izquierda de la lista
+  }
+
+  li {
+    font-size: 16px; // Tamaño de fuente de los elementos de la lista
+    line-height: 1.5; // Altura de línea de los elementos de la lista
+    margin-bottom: 5px; // Margen inferior de los elementos de la lista
+  }
+}
+
+.consejos-item {
+  margin-bottom: 30px; // Espacio entre cada elemento de consejo
+  padding: 20px; // Espaciado interno
+  background-color: #f8f9fa; // Color de fondo
+  border-radius: 8px; // Borde redondeado
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Sombra suave
+
+  h4 {
+    color: $color-primario; // Color del título
+    font-size: 24px; // Tamaño de fuente del título
+    margin-bottom: 10px; // Espacio inferior del título
+  }
+
+  p {
+    color: #666; // Color del texto
+    font-size: 16px; // Tamaño de fuente del texto
+    line-height: 1.5; // Espaciado entre líneas
+  }
+
+  ul {
+    margin-top: 10px; // Espacio superior de la lista
+  }
+
+  li {
+    color: #666; // Color del texto de la lista
+    font-size: 16px; // Tamaño de fuente de la lista
+    line-height: 1.5; // Espaciado entre líneas de la lista
+  }
+}
