@@ -1,5 +1,6 @@
-// _mixins.scss
+@import "../utilities/variables";
 
+// Mixin para estilos del cuerpo
 @mixin estilos-body {
   font-family: $text-font;
   font-size: $base-font-size;
@@ -10,39 +11,29 @@
   // Establecer márgenes y padding
   margin: $espaciado;
   padding: $espaciado;
-}
+  // Establecer estilos para enlaces
+  a {
+    color: $color-texto-enlace;
+    text-decoration: none;
 
-// Establecer estilos para enlaces
-a {
-  color: $color-texto-enlace;
-  text-decoration: none;
-
-  &:hover {
-    color: $color-hover-enlace;
+    &:hover {
+      color: $color-hover-enlace;
+    }
   }
 }
 
-// Estilos específicos para dispositivos móviles
+// Otros estilos que desees aplicar al body
+
+// Estilos responsive
 @mixin estilos-responsive {
-  @media screen and (max-width: 768px) {
-    // Aquí puedes agregar estilos específicos para dispositivos móviles
-    padding: $espaciado * 0.5;
-    font-size: $base-font-size * 0.8;
+  @media screen and (max-width: $breakpoint-sm) {
+    // Estilos para dispositivos móviles
+    // Puedes agregar estilos específicos para tamaños de pantalla más pequeños aquí
   }
 
-  // Estilos específicos para dispositivos de escritorio
-  @media screen and (min-width: 769px) and (max-width: 1200px) {
-    // Aquí puedes agregar estilos específicos para dispositivos de escritorio
-    padding: $espaciado * 1.5;
-    font-size: $base-font-size * 1.2;
+  @media screen and (min-width: $breakpoint-md) {
+    // Estilos para dispositivos medianos
   }
-}
 
-@mixin make-container($padding-x: 10px) { // Cambia 10px al valor deseado si es diferente
-  width: 100%;
-  padding-right: $padding-x;
-  padding-left: $padding-x;
-  margin-right: auto;
-  margin-left: auto;
+  // Agregar más media queries según sea necesario
 }
-

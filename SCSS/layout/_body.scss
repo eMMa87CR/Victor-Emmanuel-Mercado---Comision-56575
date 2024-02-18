@@ -1,0 +1,19 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+@import "../components/boton";
+
+.mi-body {
+    font-family: $text-font;
+    font-size: $base-font-size;
+    line-height: 1.25; // Ajusta este valor según tus necesidades
+    color: $color-texto-enlace;
+    background-color: $color-fondo-nav;
+    margin: $espaciado;
+    padding: $espaciado;
+    @include estilos-body;
+    @include estilos-responsive;
+}
+
+.boton-top{
+  @include boton-volver-arriba;
+}

@@ -1,3 +1,32 @@
-.boton-top{
-    @extend .button-base;
+// Definición de variables
+$color-primario: hsla(123, 93%, 26%, 0.382); // Color verde primario
+$color-texto: #ffffff; // Color del texto en el botón
+$border-radius: 4px; // Radio de borde para el botón
+$boton-padding: 12px 24px; // Espaciado interno del botón
+$boton-font-size: 16px; // Tamaño de fuente del botón
+$boton-border: 1px solid $color-primario; // Borde del botón
+$boton-hover-color: #ffffff; // Color de texto al pasar el ratón sobre el botón
+$boton-hover-bg: #0c542b; // Color de fondo al pasar el ratón sobre el botón
+$boton-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Sombra del botón
+
+@mixin boton-volver-arriba {
+    background-color: $color-primario;
+    color: $color-texto;
+    border-radius: $border-radius;
+    padding: $boton-padding;
+    font-size: $boton-font-size;
+    border: $boton-border;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: $boton-shadow;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        background-color: $boton-hover-bg;
+        color: $boton-hover-color;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 }
+
+
+

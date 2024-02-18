@@ -1,14 +1,16 @@
+
+//utilities
+@import "utilities/variables";
+@import "utilities/mixins";
+
 //layout
 @import "base/reset";
 @import "layout/header";
 @import "layout/main-index";
 @import "layout/main-nosotros";
 @import "layout/main-consejos";
+@import "layout/body"; 
 
-//utilities
-@import "utilities/variables";
-@import "utilities/extend";
-@import "utilities/mixins";
 
 //components
 @import "components/boton";
