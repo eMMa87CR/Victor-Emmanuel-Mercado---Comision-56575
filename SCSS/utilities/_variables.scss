@@ -1,7 +1,7 @@
 // Colores extraídos del logotipo
 $color-logo-verde: #5cab4a; // Un tono de verde presente en el logotipo
 $color-logo-azul: #0071bc; // Un tono de azul presente en el logotipo
-$color-logo-rojo: #e03a3e; // Un tono de rojo presente en el logotipo
+$color-logo-rojo: hsl(228, 73%, 55%); // Un tono de rojo presente en el logotipo
 
 // Actualizamos los colores primario y secundario para alinearlos con el logotipo
 $color-primario: $color-logo-verde; // Verde del logo para elementos relacionados con la salud

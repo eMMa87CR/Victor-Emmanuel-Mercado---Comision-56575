@@ -68,7 +68,7 @@ main {
         5%
       ); // Un fondo más claro que el color de fondo del nav
       border: 1px solid darken($color-fondo-nav, 5%); // Un borde ligeramente más oscuro para definir
-      border-radius: calc(#{$espaciado} /4 ); // Redondeamos las esquinas
+      border-radius: calc(#{$espaciado} / 4); // Redondeamos las esquinas
 
       h3 {
         color: $color-primario;
