@@ -2,82 +2,62 @@
 @import "../utilities/mixins";
 
 main {
-  margin-top: 5rem; // 5rem para asegurarse de que hay espacio suficiente desde la barra de navegación
+  margin-top: 5rem;
   padding-top: 1rem;
 
   .hero-section {
-    padding-top: 5rem; // Añadimos más espacio en la parte superior de la hero section
-    background-color: $color-fondo-nav; // Usamos el color de fondo del nav como fondo de la hero section
+    padding-top: 5rem;
+    background-color: $color-fondo-nav;
 
     h1 {
       color: $color-primario;
-      font-size: $base-font-size * 2.5; // display-4 equivalente
+      font-size: $base-font-size * 2.5;
       margin-bottom: $espaciado;
     }
 
     p {
       color: $color-texto-enlace;
       &.lead {
-        font-size: $base-font-size * 1.25; // Tamaño de fuente más grande para el texto principal
-        font-weight: bold; // Negrita para destacar
+        font-size: $base-font-size * 1.25;
+        font-weight: bold;
       }
     }
 
     a.btn-primary {
-      background-color: $color-accento; // Usamos el color de acento para los botones primarios
-      border-color: darken(
-        $color-accento,
-        15%
-      ); // Oscurecemos el color de acento para el borde
-      &:hover {
-        background-color: darken($color-accento, 10%);
-        border-color: darken($color-accento, 20%);
-      }
+      @include button-styles;
     }
 
     img {
-      max-width: 100%; // Aseguramos que la imagen no sobrepase su contenedor
+      max-width: 100%;
       border-radius: calc(#{$espaciado} / 2);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra suave para la imagen
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
   }
 
-  section {
-    margin: $espaciado auto; // Añadimos un espaciado automático horizontal para centrar la sección
-    padding: 2 * $espaciado 0;
+  // ... otros estilos ...
 
-    h2 {
-      color: $color-secundario;
-      font-size: $base-font-size * 2;
-      margin-bottom: $espaciado * 1.5;
-    }
+  // Incluye el mixin de estilos responsivos
+  @include estilos-responsive;
+}
 
-    .row {
-      margin: 0 auto;
-      max-width: map-get(
-        $container-max-widths,
-        lg
-      ); // Utilizamos un ancho máximo basado en el mapa de anchuras
-      @include estilos-responsive; // Incluimos los estilos responsivos
-    }
+// Mixins de estilos de botón como ejemplo
+@mixin button-styles {
+  background-color: $color-accento;
+  border-color: darken($color-accento, 15%);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
-    .p-4 {
-      padding: $espaciado; // Usamos la variable de espaciado para el padding
-      background-color: lighten(
-        $color-fondo-nav,
-        5%
-      ); // Un fondo más claro que el color de fondo del nav
-      border: 1px solid darken($color-fondo-nav, 5%); // Un borde ligeramente más oscuro para definir
-      border-radius: calc(#{$espaciado} / 4); // Redondeamos las esquinas
+@mixin button-hover-styles {
+  background-color: darken($color-accento, 10%);
+  border-color: darken($color-accento, 20%);
+}
 
-      h3 {
-        color: $color-primario;
-        font-size: $base-font-size * 1.5;
-      }
-
-      p {
-        color: darken($color-texto-enlace, 10%);
-      }
+// Mixin de estilos responsivos
+@mixin estilos-responsive {
+  @media screen and (max-width: $breakpoint-md) {
+    // Estilos para dispositivos móviles y tabletas hasta el breakpoint mediano
+    .btn-servicios {
+      margin-top: 2rem; // Añade un margen superior de 2rem para dispositivos pequeños
     }
   }
 }

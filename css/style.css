@@ -19,53 +19,44 @@ main .hero-section p.lead {
   font-weight: bold;
 }
 main .hero-section a.btn-primary {
-  background-color: hsl(228, 73%, 55%);
-  border-color: #1c39b0;
+  padding: 20px;
+  font-size: 16px;
+  color: #000000;
+  background-color: #5cab4a;
+  border: 1px solid #5cab4a;
+  border-radius: calc(20px / 2);
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 main .hero-section a.btn-primary:hover {
-  background-color: #1f40c7;
-  border-color: #18329a;
+  color: #0071bc;
+  background-color: #49873b;
+  border-color: #49873b;
+}
+main .hero-section a.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(92, 171, 74, 0.5);
+}
+main .hero-section a.btn-primary:active {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 main .hero-section img {
   max-width: 100%;
   border-radius: calc(20px / 2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-main section {
-  margin: 20px auto;
-  padding: 40px 0;
-}
-main section h2 {
-  color: #0071bc;
-  font-size: 32px;
-  margin-bottom: 30px;
-}
-main section .row {
-  margin: 0 auto;
-  max-width: 960px;
-}
 @media screen and (max-width: 576px) {
-  main section .row body {
+  main body {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 768px) {
-  main section .row body {
+  main body {
     font-size: 16px;
   }
-}
-main section .p-4 {
-  padding: 20px;
-  background-color: white;
-  border: 1px solid #ebebeb;
-  border-radius: calc(20px / 4);
-}
-main section .p-4 h3 {
-  color: #5cab4a;
-  font-size: 24px;
-}
-main section .p-4 p {
-  color: black;
 }
 
 .main-servicios {
@@ -217,19 +208,19 @@ main section .p-4 p {
 }
 
 .boton-top {
-  background-color: hsla(123, 93%, 26%, 0.382);
-  color: #ffffff;
-  border-radius: 4px;
-  padding: 12px 24px;
+  background-color: #5cab4a;
+  color: #000000;
+  border-radius: 5px;
+  padding: 10px 20px;
   font-size: 16px;
-  border: 1px solid hsla(123, 93%, 26%, 0.382);
+  border: 1px solid #CCCCCC;
   text-decoration: none;
   display: inline-block;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 .boton-top:hover {
-  background-color: #0c542b;
+  background-color: #f0f0f0;
   color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -240,14 +231,14 @@ main section.container {
 main section.container h2.section-title {
   font-family: "Arial", sans-serif;
   font-size: 32px;
-  color: hsla(123, 93%, 26%, 0.382);
+  color: #5cab4a;
   margin-bottom: 20px;
 }
 main section.container .row .col-md-6 .card.shadow.mb-4 .card-body h4.card-title,
 main section.container .row .col-md-6 .card.shadow.mb-4 .card-body p.card-text {
   font-family: "Arial", sans-serif;
   margin-bottom: 20px;
-  color: hsla(123, 93%, 26%, 0.382);
+  color: #5cab4a;
 }
 main section.container .row .col-md-6 .card.shadow.mb-4 .card-body h4.card-title {
   font-size: 24px;

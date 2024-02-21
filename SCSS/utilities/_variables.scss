@@ -37,3 +37,11 @@ $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
+
+//estilo boton
+$boton-padding: 10px 20px; // Puedes ajustar los valores según tus necesidades
+$boton-font-size: 16px; // Puedes ajustar el tamaño de fuente según tus necesidades
+$boton-border: 1px solid #CCCCCC; // Puedes ajustar el color y grosor del borde según tus necesidades
+$boton-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Puedes ajustar los valores de desplazamiento, tamaño y color de la sombra según tus necesidades
+$boton-hover-bg: #f0f0f0; // Puedes ajustar el color según tus preferencias de diseño
+$boton-hover-color: #ffffff; // Puedes ajustar el color según tus preferencias de diseño
