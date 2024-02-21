@@ -1,0 +1,54 @@
+@import "/SCSS/utilities/variables";
+@import "/SCSS/utilities/mixins";
+main {
+    section.container {
+        padding: $container-padding;
+
+        h2.section-title {
+            font-family: $text-font;
+            font-size: $base-font-size * 2;
+            color: $color-primario;
+            margin-bottom: $espaciado;
+        }
+
+        .row {
+            .col-md-6 {
+                .card.shadow.mb-4 {
+                    .card-body {
+                        h4.card-title {
+                            font-family: $text-font;
+                            font-size: $base-font-size * 1.5;
+                            color: $color-primario;
+                            margin-bottom: $espaciado;
+                        }
+
+                        p.card-text {
+                            font-family: $text-font;
+                            font-size: $base-font-size;
+                            color: $color-texto-enlace;
+                            line-height: 1.5;
+                        }
+
+                        img.img-fluid.mb-3 {
+                            margin-bottom: $espaciado;
+                        }
+                    }
+                }
+            }
+        }
+
+        .boton-top.text-center {
+            margin-top: $espaciado * 5;
+
+            &[data-aos='fade-up'] {
+                a.btn.btn-primary {
+                    background-color: $color-primario;
+
+                    &:hover {
+                        background-color: darken($color-primario, 10%);
+                    }
+                }
+            }
+        }
+    }
+}
