@@ -1,28 +1,39 @@
-// Colores
-$color-primario: #05810b; // Verde primario para resaltar elementos relacionados con la salud
-$color-secundario: #0004ff83; // Azul transparente secundario para resaltar información importante
-$color-fondo-nav: #f8f8f8; // Color de fondo para la barra de navegación
-$color-texto-enlace: #555; // Color del texto del enlace
-$color-hover-enlace: #0004ff; // Color del texto del enlace al pasar el ratón
+// Colores extraídos del logotipo
+$color-logo-verde: #5cab4a; // Un tono de verde presente en el logotipo
+$color-logo-azul: #0071bc; // Un tono de azul presente en el logotipo
+$color-logo-rojo: #e03a3e; // Un tono de rojo presente en el logotipo
 
-// Espaciado y medidas
+// Actualizamos los colores primario y secundario para alinearlos con el logotipo
+$color-primario: $color-logo-verde; // Verde del logo para elementos relacionados con la salud
+$color-secundario: $color-logo-azul; // Azul del logo para resaltar información importante
+
+// Usamos el rojo del logo para acciones o CTA (Call To Action)
+$color-accento: $color-logo-rojo;
+
+// Mantenemos los colores neutros
+$color-fondo-nav: #f8f8f8; // Color de fondo para la barra de navegación
+$color-texto-enlace: #000000; // Color del texto del enlace general
+$color-hover-enlace: $color-logo-azul; // Color del enlace al pasar el ratón, usamos el azul del logo
+
+// Espaciado y medidas se mantienen
 $espaciado: 20px; // Espaciado común
 $container-padding: 16px; // Padding para el contenedor principal
+
+// Actualizamos el container max-widths si es necesario
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+  xxl: 1320px,
 );
 
-// Tipografía
-$text-font: 'Arial', sans-serif; // Familia de fuentes predeterminada
+// Tipografía se mantiene o se actualiza si es necesario
+$text-font: "Arial", sans-serif; // Familia de fuentes predeterminada
 $base-font-size: 16px; // Tamaño de fuente base
 
-// Puntos de quiebre para diseño responsive
+// Puntos de quiebre para diseño responsive se mantienen
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
-

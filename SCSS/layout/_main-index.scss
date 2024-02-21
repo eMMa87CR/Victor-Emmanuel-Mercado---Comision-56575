@@ -1,38 +1,83 @@
-// Estilos para el contenedor principal <main>
-.main-index {
-  // Estilos generales
-  padding: 20px; // Espaciado interior
-  margin-top: 20px; // Margen superior
+@import "../utilities/variables";
+@import "../utilities/mixins";
 
-  // Estilos para los títulos <h2>
-  h2 {
-    color: $color-primario; // Color del título
-    font-size: 24px; // Tamaño de fuente del título
-    margin-bottom: 20px; // Margen inferior del título
+main {
+  margin-top: 5rem; // 5rem para asegurarse de que hay espacio suficiente desde la barra de navegación
+  padding-top: 1rem;
+
+  .hero-section {
+    padding-top: 5rem; // Añadimos más espacio en la parte superior de la hero section
+    background-color: $color-fondo-nav; // Usamos el color de fondo del nav como fondo de la hero section
+
+    h1 {
+      color: $color-primario;
+      font-size: $base-font-size * 2.5; // display-4 equivalente
+      margin-bottom: $espaciado;
+    }
+
+    p {
+      color: $color-texto-enlace;
+      &.lead {
+        font-size: $base-font-size * 1.25; // Tamaño de fuente más grande para el texto principal
+        font-weight: bold; // Negrita para destacar
+      }
+    }
+
+    a.btn-primary {
+      background-color: $color-accento; // Usamos el color de acento para los botones primarios
+      border-color: darken(
+        $color-accento,
+        15%
+      ); // Oscurecemos el color de acento para el borde
+      &:hover {
+        background-color: darken($color-accento, 10%);
+        border-color: darken($color-accento, 20%);
+      }
+    }
+
+    img {
+      max-width: 100%; // Aseguramos que la imagen no sobrepase su contenedor
+      border-radius: calc(#{$espaciado} / 2);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra suave para la imagen
+    }
   }
 
-  // Estilos para los párrafos <p>
-  p {
-    font-size: 16px; // Tamaño de fuente del párrafo
-    line-height: 1.5; // Altura de línea del párrafo
-    margin-bottom: 15px; // Margen inferior del párrafo
-  }
+  section {
+    margin: $espaciado auto; // Añadimos un espaciado automático horizontal para centrar la sección
+    padding: 2 * $espaciado 0;
 
-  // Estilos para las imágenes <img>
-  img {
-    max-width: 100%; // Imagen al ancho del contenedor
-    height: auto; // Altura automática
-    border-radius: 8px; // Borde redondeado
-    margin-bottom: 20px; // Margen inferior de la imagen
-  }
+    h2 {
+      color: $color-secundario;
+      font-size: $base-font-size * 2;
+      margin-bottom: $espaciado * 1.5;
+    }
 
-  // Estilos para el botón de volver arriba
-  .boton-top {
-    margin-top: 30px; // Margen superior
-    a {
-      font-weight: bold; // Negrita
-      text-transform: uppercase; // Mayúsculas
-      letter-spacing: 1px; // Espaciado entre letras
+    .row {
+      margin: 0 auto;
+      max-width: map-get(
+        $container-max-widths,
+        lg
+      ); // Utilizamos un ancho máximo basado en el mapa de anchuras
+      @include estilos-responsive; // Incluimos los estilos responsivos
+    }
+
+    .p-4 {
+      padding: $espaciado; // Usamos la variable de espaciado para el padding
+      background-color: lighten(
+        $color-fondo-nav,
+        5%
+      ); // Un fondo más claro que el color de fondo del nav
+      border: 1px solid darken($color-fondo-nav, 5%); // Un borde ligeramente más oscuro para definir
+      border-radius: calc(#{$espaciado} /4 ); // Redondeamos las esquinas
+
+      h3 {
+        color: $color-primario;
+        font-size: $base-font-size * 1.5;
+      }
+
+      p {
+        color: darken($color-texto-enlace, 10%);
+      }
     }
   }
 }

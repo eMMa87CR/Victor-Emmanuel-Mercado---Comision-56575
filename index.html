@@ -23,10 +23,10 @@
 
 <body class="mi-body">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./assets/img/Logo Farmacia Azul.png" alt="logo farmacia roca" class="img-fluid">
+                    <img src="./assets/img/Logo Farmacia Azul.png" alt="Logo de Farmacia Roca" class="img-fluid" style="max-height: 50px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,25 +52,51 @@
         </nav>
     </header>
 
-    <main>
-        <div class="container main-index">
-            <section>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>¡Bienvenido a Farmacia Roca, Tu Socio en Salud!</h2>
-                        <p>En Farmacia Roca, tenemos el compromiso de ofrecerte una farmacia en línea que sea tu mejor opción para el cuidado de la salud. Contamos con productos farmacéuticos de la más alta calidad y servicios personalizados para tu bienestar. Nuestra misión es brindarte una experiencia de compra segura, rápida y fácil.</p>
-                        <p>Estamos a tu disposición, ya sea que necesites información sobre nuestros productos, desees realizar un pedido o requieras asesoramiento farmacéutico. En Farmacia Roca, la atención personalizada va más allá de las palabras; es un compromiso que respaldamos con acciones. ¡Estamos ansiosos por servirte!</p>
+    <main class="mt-5 pt-3">
+        <div class="hero-section">
+            <div class="container pt-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-4">¡Bienvenido a Farmacia Roca!</h1>
+                        <p class="lead">Comprometidos con tu salud y bienestar.</p>
+                        <p>Con más de 20 años de experiencia, Farmacia Roca es tu aliado de confianza en el cuidado de la salud. Ofrecemos una amplia gama de productos farmacéuticos y servicios personalizados para atender todas tus necesidades.</p>
+                        <p>Nuestro equipo de profesionales altamente cualificados está aquí para brindarte asesoramiento experto, ya sea en persona o a través de nuestra plataforma en línea.</p>
+                        <a href="./html/servicios.html" class="btn btn-primary btn-lg">Explora nuestros servicios</a>
                     </div>
-                    <div class="col-md-6">
-                        <img src="./assets/img/frente.jpg" alt="Farmacia Roca - Foto de frente" class="img-fluid rounded">
+                    <div class="col-lg-6 text-center">
+                        <img src="./assets/img/frente.jpg" alt="Fachada de Farmacia Roca" class="img-fluid rounded shadow-lg">
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
+
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Nuestros Valores</h2>
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="h-100 p-4 bg-light border rounded-3">
+                        <h3>Calidad</h3>
+                        <p>Garantizamos la más alta calidad en todos nuestros productos y servicios, asegurando tu satisfacción y bienestar.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="h-100 p-4 bg-light border rounded-3">
+                        <h3>Confianza</h3>
+                        <p>Construimos relaciones basadas en la confianza y el respeto, ofreciendo un trato personalizado y profesional.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="h-100 p-4 bg-light border rounded-3">
+                        <h3>Innovación</h3>
+                        <p>Estamos en constante búsqueda de innovaciones para mejorar tu experiencia y ofrecerte las mejores soluciones de salud.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Botón para volver arriba -->
         <p class="text-center mt-5 boton-top" data-aos="fade-up"><a href="#top" class="btn btn-primary">Volver arriba</a></p>
     </main>
-    
 
     <footer>
         <div class="container">
@@ -102,17 +128,12 @@
         </div>
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
+
 
 </html>
