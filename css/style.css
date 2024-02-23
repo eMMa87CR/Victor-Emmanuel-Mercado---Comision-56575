@@ -1,3 +1,53 @@
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin: 10px 0;
+}
+
+.social-links li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+  color: #007bff;
+}
+
+.mapa-container iframe {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.footer-credits {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #e2e2e2;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 main {
   margin-top: 5rem;
   padding-top: 1rem;
@@ -30,6 +80,7 @@ main .hero-section a.btn-primary {
   display: inline-block;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
+  margin: 1rem;
 }
 main .hero-section a.btn-primary:hover {
   color: #0071bc;
@@ -120,59 +171,73 @@ main .hero-section img {
 }
 
 .main-consejos {
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000000;
+  padding: 20px 0;
   background-color: #f8f8f8;
-  margin: 20px;
-  padding: 20px;
-}
-.main-consejos a {
   color: #000000;
+  font-family: "Arial", sans-serif;
+}
+.main-consejos > section.text-center {
+  margin-bottom: 50px;
+}
+.main-consejos > section.text-center h2 {
+  color: #5cab4a;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.main-consejos > section.text-center p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.main-consejos > section {
+  margin-bottom: 50px;
+}
+.main-consejos > section h3 {
+  color: #0071bc;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.main-consejos > section ul {
+  list-style: none;
+  padding-left: 0;
+}
+.main-consejos > section ul li {
+  background-color: #ebebeb;
+  padding: 20px;
+  border-left: 4px solid hsl(228, 73%, 55%);
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+.main-consejos > section ul li:hover {
+  background-color: #dfdfdf;
+}
+.main-consejos > section h4 {
+  color: hsl(228, 73%, 55%);
+  font-size: 24px;
+}
+.main-consejos > section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.main-consejos > section a {
+  color: hsl(228, 73%, 55%);
   text-decoration: none;
 }
-.main-consejos a:hover {
-  color: #0071bc;
-}
-.main-consejos .consejos-item {
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: white;
-  border-radius: calc(20px / 2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.main-consejos .consejos-item h4 {
-  color: #5cab4a;
-  font-size: 20px;
-}
-.main-consejos .consejos-item p, .main-consejos .consejos-item ul {
-  color: #000000;
-}
-.main-consejos .consejos-item a {
-  color: #5cab4a;
-}
-.main-consejos .consejos-item a:hover {
+.main-consejos > section a:hover {
   color: #0071bc;
   text-decoration: underline;
 }
-.main-consejos .boton-top a {
-  background-color: hsl(228, 73%, 55%);
-}
-@media screen and (max-width: 576px) {
-  .main-consejos .boton-top a body {
-    font-size: 14px;
+
+@media (max-width: 768px) {
+  .main-consejos h2 {
+    font-size: 24px;
   }
-}
-@media screen and (min-width: 768px) {
-  .main-consejos .boton-top a body {
+  .main-consejos h3 {
+    font-size: 20px;
+  }
+  .main-consejos p {
     font-size: 16px;
   }
 }
-.main-consejos .boton-top a:hover {
-  background-color: #1f40c7;
-}
-
 .mi-body {
   font-family: "Arial", sans-serif;
   font-size: 16px;

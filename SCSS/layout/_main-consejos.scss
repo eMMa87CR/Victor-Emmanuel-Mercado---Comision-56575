@@ -1,40 +1,92 @@
+// Importamos las variables y mixins para asegurarnos de que están disponibles
 @import "../utilities/variables";
-@import "../utilities/mixins";
 
+// Estilos base para el contenido principal
 .main-consejos {
-  @include estilos-body;
+  padding: $espaciado 0;
+  background-color: $color-fondo-nav;
+  color: $color-texto-enlace;
+  font-family: $text-font;
 
-  .consejos-item {
-    margin-bottom: $espaciado;
-    padding: $espaciado;
-    background-color: lighten($color-fondo-nav, 5%);
-    border-radius: calc(#{$espaciado} / 2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  // Estilos para la sección de encabezado y subtítulo
+  > section.text-center {
+    margin-bottom: $espaciado * 2.5;
 
-    h4 {
+    h2 {
       color: $color-primario;
+      font-size: $base-font-size * 2;
+      margin-bottom: $espaciado;
+    }
+
+    p {
       font-size: $base-font-size * 1.25;
+      margin-bottom: $espaciado * 2;
+    }
+  }
+
+  // Estilos para subsecciones y listas
+  > section {
+    margin-bottom: $espaciado * 2.5;
+
+    h3 {
+      color: $color-secundario;
+      font-size: $base-font-size * 1.75;
+      margin-bottom: $espaciado;
     }
 
-    p, ul {
-      color: $color-texto-enlace;
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        background-color: darken($color-fondo-nav, 5%);
+        padding: $espaciado;
+        border-left: 4px solid $color-accento;
+        margin-bottom: calc($espaciado / 2);
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: darken($color-fondo-nav, 10%);
+        }
+      }
     }
 
+    // Títulos y párrafos dentro de las subsecciones
+    h4 {
+      color: $color-accento;
+      font-size: $base-font-size * 1.5;
+    }
+
+    p {
+      font-size: $base-font-size;
+      margin-bottom: $espaciado;
+    }
+
+    // Estilos para enlaces
     a {
-      color: $color-primario;
+      color: $color-accento;
+      text-decoration: none;
       &:hover {
         color: $color-hover-enlace;
         text-decoration: underline;
       }
     }
   }
+}
 
-  .boton-top a {
-    @include estilos-responsive;
-    // Styles for the back to top button
-    background-color: $color-accento;
-    &:hover {
-      background-color: darken($color-accento, 10%);
+// Estilos responsivos para tamaños de pantalla más pequeños
+@media (max-width: 768px) {
+  .main-consejos {
+    h2 {
+      font-size: $base-font-size * 1.5;
+    }
+
+    h3 {
+      font-size: $base-font-size * 1.25;
+    }
+
+    p {
+      font-size: $base-font-size;
     }
   }
 }

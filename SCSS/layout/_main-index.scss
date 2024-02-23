@@ -25,6 +25,7 @@ main {
 
     a.btn-primary {
       @include button-styles;
+      margin: 1rem;
     }
 
     img {
