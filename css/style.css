@@ -1,46 +1,40 @@
 @charset "UTF-8";
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #f8f9fa; /* Fondo claro para el footer */
+  padding: 2rem 0; /* Espaciado superior e inferior */
+  color: #212529; /* Color de texto */
 }
 
 .footer-section {
-  flex: 1;
-  min-width: 250px;
-}
-
-.social-links {
-  list-style: none;
-  padding: 0;
+  margin-bottom: 1rem;
 }
 
 .social-links li {
-  margin: 10px 0;
+  list-style: none; /* Elimina los estilos de lista */
 }
 
-.social-links li a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s ease;
+.social-links a {
+  color: #212529; /* Color de texto */
+  text-decoration: none; /* Elimina el subrayado */
+  margin-right: 15px; /* Espaciado entre enlaces */
 }
 
-.social-links li a:hover {
-  color: #007bff;
-}
-
-.mapa-container iframe {
-  border-radius: 8px;
-  overflow: hidden;
+.social-links a:hover {
+  color: #0056b3; /* Color al pasar el mouse */
 }
 
 .footer-credits {
-  text-align: center;
-  padding: 20px 10px;
-  background-color: #e2e2e2;
-  margin-top: 20px;
+  text-align: center; /* Centra el texto de los créditos */
+  padding: 1rem 0; /* Espaciado superior e inferior */
+  background-color: #e9ecef; /* Fondo para los créditos */
+  color: #6c757d; /* Color de texto para los créditos */
+  font-size: 0.875rem; /* Tamaño de fuente más pequeño */
+}
+
+.mapa-container iframe {
+  border-radius: 8px; /* Bordes redondeados para el mapa */
+  overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para el mapa */
 }
 
 @media (max-width: 768px) {
@@ -75,7 +69,7 @@ main .hero-section a.btn-primary {
   color: #000000;
   background-color: #5cab4a;
   border: 1px solid #5cab4a;
-  border-radius: 5px;
+  border-radius: calc(20px / 2);
   text-align: center;
   cursor: pointer;
   display: inline-block;
@@ -84,8 +78,8 @@ main .hero-section a.btn-primary {
   margin: 1rem;
 }
 main .hero-section a.btn-primary:hover {
-  color: #ffffff;
-  background-color: #f0f0f0;
+  color: #0071bc;
+  background-color: #49873b;
   border-color: #49873b;
 }
 main .hero-section a.btn-primary:focus {
@@ -273,10 +267,10 @@ main .hero-section img {
   }
 }
 
-.boton-top {
+.boton-flotante {
   background-color: #5cab4a;
   color: #000000;
-  border-radius: 5px;
+  border-radius: 2rem;
   padding: 10px 20px;
   font-size: 16px;
   border: 2px solid #CCCCCC;
@@ -284,8 +278,12 @@ main .hero-section img {
   display: inline-block;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  position: sticky;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 0;
 }
-.boton-top:hover {
+.boton-flotante:hover {
   background-color: #f0f0f0;
   color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -334,6 +332,14 @@ main section.container .row .col-md-6 .card.shadow.mb-4 .card-body img.img-fluid
 
 .navbar-custom .nav-link:hover {
   color: #d9d9d9; /* Color en hover */
+}
+
+.hover-animate {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.hover-animate:hover, .hover-animate:focus {
+  transform: scale(1.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */
