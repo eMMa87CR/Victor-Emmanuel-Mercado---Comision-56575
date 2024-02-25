@@ -2,46 +2,41 @@
 @import "../utilities/variables";
 @import "../utilities/mixins";
 @import "../components/boton";
-// Estilos generales
-body {
-  @include estilos-body;
+
+// Estilos principales de la sección
+.main-nosotros {
+  padding: $container-padding;
+  background-color: lighten($color-fondo-nav, 5%);
 }
 
-// Estilizar el título de la sección
-.section-title {
-  color: $color-primario;
-  text-align: center;
-  margin-bottom: $espaciado;
-  font-size: 1.5rem;
-  font-weight: bold;
+.section-nosotros {
+  .container {
+    padding: $container-padding 0;
+
+    .row {
+      margin-top: $espaciado;
+    }
+  }
 }
 
-// Estilizar las tarjetas
+// Estilos para las tarjetas
 .card {
-  box-shadow: $boton-shadow;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: $border-radius;
   margin-bottom: $espaciado;
   border: none;
 
   .card-body {
     padding: $espaciado;
-  }
 
-  .card-title {
-    color: $color-secundario;
-    font-size: 1.25rem;
-  }
+    .card-title {
+      color: $color-primario;
+      font-size: 1.25rem;
+    }
 
-  .card-text {
-    color: darken($color-texto-enlace, 20%);
-    font-size: 1rem;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: $border-radius;
+    .card-text {
+      font-size: 1rem;
+      color: darken($color-texto-enlace, 10%);
+    }
   }
 }
-
-// Aplicar estilos responsivos
-@include estilos-responsive;

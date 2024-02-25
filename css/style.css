@@ -371,63 +371,36 @@ form button.btn-primary:active {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-body {
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000000;
-  background-color: #f8f8f8;
-  margin: 20px;
-  padding: 20px;
-}
-body a {
-  color: #000000;
-  text-decoration: none;
-}
-body a:hover {
-  color: #0071bc;
+.main-nosotros {
+  padding: 16px;
+  background-color: white;
 }
 
-.section-title {
-  color: #5cab4a;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  font-weight: bold;
+.section-nosotros .container {
+  padding: 16px 0;
+}
+.section-nosotros .container .row {
+  margin-top: 20px;
 }
 
 .card {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   margin-bottom: 20px;
   border: none;
 }
 .card .card-body {
   padding: 20px;
 }
-.card .card-title {
-  color: #0071bc;
+.card .card-body .card-title {
+  color: #5cab4a;
   font-size: 1.25rem;
 }
-.card .card-text {
-  color: black;
+.card .card-body .card-text {
   font-size: 1rem;
-}
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+  color: black;
 }
 
-@media screen and (max-width: 576px) {
-  body {
-    font-size: 14px;
-  }
-}
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-}
 .navbar-custom {
   background-color: #005f73; /* Cambia el color de fondo de la barra de navegación */
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Añade sombra para darle profundidad */
