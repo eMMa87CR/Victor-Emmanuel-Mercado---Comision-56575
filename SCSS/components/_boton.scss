@@ -13,10 +13,10 @@
   box-shadow: $boton-shadow;
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
   
-  position: sticky; // Posicionamiento fijo para hacerlo flotante
+ position: fixed; // Posicionamiento fijo para hacerlo flotante
   bottom: 2rem; // Distancia desde el fondo
   right: 2rem; // Distancia desde la derecha
-  z-index: 0; // Asegura que el botón esté sobre otros elementos
+  z-index: 50; // Asegura que el botón esté sobre otros elementos
 
   &:hover {
     background-color: $boton-hover-bg;

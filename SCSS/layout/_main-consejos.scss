@@ -1,6 +1,7 @@
-// Importamos las variables y mixins para asegurarnos de que están disponibles
+//utilities
 @import "../utilities/variables";
 @import "../utilities/mixins";
+@import "../components/boton";
 
 // Estilos base para el contenido principal
 .main-consejos {

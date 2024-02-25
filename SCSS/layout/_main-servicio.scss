@@ -1,42 +1,47 @@
-main {
-    section.container {
-      padding: $container-padding;
-  
-      h2.section-title {
-        font-family: $text-font;
-        font-size: $base-font-size * 2;
-        color: $color-primario;
-        margin-bottom: $espaciado;
-      }
-  
-      .row {
-        .col-md-6 {
-          .card.shadow.mb-4 {
-            .card-body {
-              h4.card-title,
-              p.card-text {
-                font-family: $text-font;
-                margin-bottom: $espaciado;
-                color: $color-primario;
-              }
-  
-              h4.card-title {
-                font-size: $base-font-size * 1.5;
-              }
-  
-              p.card-text {
-                font-size: $base-font-size;
-                color: $color-texto-enlace;
-                line-height: 1.5;
-              }
-  
-              img.img-fluid.mb-3 {
-                margin-bottom: $espaciado;
-              }
-            }
-          }
-        }
-      }
-    }
+//utilities
+@import "../utilities/variables";
+@import "../utilities/mixins";
+@import "../components/boton";
+// Estilos generales
+body {
+  @include estilos-body;
+}
+
+// Estilizar el título de la sección
+.section-title {
+  color: $color-primario;
+  text-align: center;
+  margin-bottom: $espaciado;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+// Estilizar las tarjetas
+.card {
+  box-shadow: $boton-shadow;
+  margin-bottom: $espaciado;
+  border: none;
+
+  .card-body {
+    padding: $espaciado;
   }
-  
+
+  .card-title {
+    color: $color-secundario;
+    font-size: 1.25rem;
+  }
+
+  .card-text {
+    color: darken($color-texto-enlace, 20%);
+    font-size: 1rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+  }
+}
+
+// Aplicar estilos responsivos
+@include estilos-responsive;
