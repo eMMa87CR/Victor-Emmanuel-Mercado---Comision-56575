@@ -84,26 +84,30 @@
                     </div>
                 </div>
             </div>
+            <!--Boton top-->
+            <div class="text-center mt-5 boton-top" data-aos="fade-up">
+                <a href="#top" class="boton-flotante"><i class="fas fa-arrow-up fa-2x"></i></a>
+            </div>
         </section>
 
-<!--Formulario de Contacto Personalizado-->
-<div class="col-md-12 mt-5"> <!-- Aquí añadí mt-5 para más margen superior -->
-    <form action="tu_endpoint_de_procesamiento" method="POST">
-        <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        <!--Formulario de Contacto Personalizado-->
+        <div class="col-md-12 mt-5"> <!-- Aquí añadí mt-5 para más margen superior -->
+            <form action="tu_endpoint_de_procesamiento" method="POST">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
         </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Correo Electrónico:</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje:</label>
-            <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-    </form>
-</div>
     </main>
 
     <footer>
