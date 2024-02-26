@@ -1,7 +1,8 @@
 @import "../utilities/variables";
 
 // Mixin para botón "Volver arriba"
-@mixin boton-top{
+// En tu archivo _boton.scss
+@mixin boton-top {
   background-color: $color-primario;
   color: $color-texto-enlace;
   border-radius: 2rem;
@@ -13,10 +14,10 @@
   box-shadow: $boton-shadow;
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
   
- position: fixed; // Posicionamiento fijo para hacerlo flotante
-  bottom: 2rem; // Distancia desde el fondo
-  right: 2rem; // Distancia desde la derecha
-  z-index: 50; // Asegura que el botón esté sobre otros elementos
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  z-index: 20;
 
   &:hover {
     background-color: $boton-hover-bg;
@@ -24,3 +25,4 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
+

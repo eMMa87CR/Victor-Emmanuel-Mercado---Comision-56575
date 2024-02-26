@@ -1,42 +1,50 @@
-//utilities
 @import "../utilities/variables";
 @import "../utilities/mixins";
 @import "../components/boton";
 
-// Estilos principales de la sección
-.main-nosotros {
+// Definimos los estilos específicos para main-servicios
+.main-servicios {
+  // Utilizamos las variables para colores y espaciado
+  background-color: $color-primario;
+  color: $color-texto-enlace;
   padding: $container-padding;
-  background-color: lighten($color-fondo-nav, 5%);
-}
 
-.section-nosotros {
-  .container {
-    padding: $container-padding 0;
+  // Aplicamos el mixin para estilos base del cuerpo que afectarán a main-servicios
+  @include estilos-body;
 
-    .row {
-      margin-top: $espaciado;
+  // Establecemos estilos específicos para los elementos dentro de main-servicios
+  h2, h3 {
+    color: $color-secundario;
+  }
+
+  // Utilizamos el mixin estilos-responsive para aplicar cambios en distintos tamaños de pantalla
+  @include estilos-responsive;
+
+  // Estilos para enlaces dentro de main-servicios
+  a {
+    color: $color-texto-enlace;
+    &:hover {
+      color: $color-hover-enlace;
+      text-decoration: underline;
     }
   }
-}
 
-// Estilos para las tarjetas
-.card {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: $border-radius;
-  margin-bottom: $espaciado;
-  border: none;
-
-  .card-body {
+  // Estilos para el contenedor principal dentro de main-servicios
+  .container {
+    max-width: map-get($container-max-widths, lg);
+    margin: auto;
     padding: $espaciado;
 
-    .card-title {
-      color: $color-primario;
-      font-size: 1.25rem;
+    // Ajustes de diseño responsivo
+    @media screen and (max-width: $breakpoint-sm) {
+      max-width: map-get($container-max-widths, sm);
     }
-
-    .card-text {
-      font-size: 1rem;
-      color: darken($color-texto-enlace, 10%);
+    @media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+      max-width: map-get($container-max-widths, md);
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+      max-width: map-get($container-max-widths, xl);
     }
   }
 }
+
