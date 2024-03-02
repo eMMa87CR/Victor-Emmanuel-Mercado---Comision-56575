@@ -402,26 +402,6 @@ form button.btn-primary:active {
   color: #0071bc;
   text-decoration: underline;
 }
-.main-servicios .container {
-  max-width: 960px;
-  margin: auto;
-  padding: 20px;
-}
-@media screen and (max-width: 576px) {
-  .main-servicios .container {
-    max-width: 540px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .main-servicios .container {
-    max-width: 720px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .main-servicios .container {
-    max-width: 1140px;
-  }
-}
 
 .navbar-custom {
   background-color: #005f73; /* Cambia el color de fondo de la barra de navegación */

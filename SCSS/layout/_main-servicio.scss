@@ -29,22 +29,5 @@
     }
   }
 
-  // Estilos para el contenedor principal dentro de main-servicios
-  .container {
-    max-width: map-get($container-max-widths, lg);
-    margin: auto;
-    padding: $espaciado;
-
-    // Ajustes de diseño responsivo
-    @media screen and (max-width: $breakpoint-sm) {
-      max-width: map-get($container-max-widths, sm);
-    }
-    @media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
-      max-width: map-get($container-max-widths, md);
-    }
-    @media screen and (min-width: $breakpoint-xl) {
-      max-width: map-get($container-max-widths, xl);
-    }
-  }
 }
 
