@@ -33,10 +33,20 @@ $text-font: "Arial", sans-serif; // Familia de fuentes predeterminada
 $base-font-size: 16px; // Tamaño de fuente base
 
 // Puntos de quiebre para diseño responsive se mantienen
+$color-fondo-nav: #f0f0f0;
+$color-texto-enlace: black;
+$color-hover-enlace: #0056b3;
+$text-font: 'Helvetica', sans-serif;
+$base-font-size: 16px;
+$espaciado-externo: 1rem;
+$espaciado-interno: 1rem;
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
+$font-size-mobile: 14px;
+$font-size-desktop: 16px;
+$font-size-large: 18px;
 
 //estilo boton
 $boton-padding: 10px 20px; // Puedes ajustar los valores según tus necesidades

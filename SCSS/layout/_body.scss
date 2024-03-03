@@ -3,13 +3,7 @@
 @import "../components/boton";
 
 .mi-body {
-    font-family: $text-font;
-    font-size: $base-font-size;
-    line-height: 1.25; // Ajusta este valor según tus necesidades
-    color: $color-texto-enlace;
-    background-color: $color-fondo-nav;
-    margin: $espaciado;
-    padding: $espaciado;
+    line-height: 1.5; // Ajusta este valor según tus necesidades
     @include estilos-body;
     @include estilos-responsive;
 }

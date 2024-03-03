@@ -1,17 +1,23 @@
 @import "../utilities/variables";
 
-
 // Mixin para estilos del cuerpo
 @mixin estilos-body {
-  font-family: $text-font;
-  font-size: $base-font-size;
-  line-height: 1.5;
-  color: $color-texto-enlace;
-  background-color: $color-fondo-nav;
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-  // Establecer márgenes y padding
-  margin: $espaciado;
-  padding: $espaciado;
+  body {
+    font-family: $text-font;
+    font-size: $base-font-size;
+    line-height: 1.5;
+    color: $color-texto-enlace;
+    background-color: $color-fondo-nav;
+    margin: $espaciado-externo;
+    padding: $espaciado-interno;
+  }
+
   // Establecer estilos para enlaces
   a {
     color: $color-texto-enlace;
@@ -20,25 +26,35 @@
     &:hover {
       color: $color-hover-enlace;
     }
+
+    &:focus {
+      outline: 3px solid lighten($color-hover-enlace, 20%);
+      outline-offset: 2px;
+    }
   }
 }
 
-// Otros estilos que desees aplicar al body
-
-// Estilos responsive
+// Mixin para estilos responsive
 @mixin estilos-responsive {
   @media screen and (max-width: $breakpoint-sm) {
-    // Estilos para dispositivos móviles
     body {
-      font-size: 14px; // Ejemplo de estilo específico para pantallas pequeñas
+      font-size: $font-size-mobile;
     }
+    // Otros estilos móviles aquí
   }
 
-  @media screen and (min-width: $breakpoint-md) {
-    // Estilos para dispositivos medianos
+  @media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
     body {
-      font-size: 16px; // Ejemplo de estilo específico para pantallas medianas
+      font-size: $font-size-desktop;
     }
+    // Otros estilos para tabletas y dispositivos medianos aquí
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    body {
+      font-size: $font-size-large;
+    }
+    // Estilos para pantallas grandes aquí
   }
 }
 
@@ -49,7 +65,9 @@
   color: $color-texto-enlace; // Texto del botón usando el color de texto general
   background-color: $color-primario; // Fondo del botón usando el color primario
   border: 1px solid $color-primario; // Borde del botón del mismo color
-  border-radius: calc(#{$espaciado} / 2);// Radio de borde utilizando la variable de espaciado
+  border-radius: calc(
+    #{$espaciado} / 2
+  ); // Radio de borde utilizando la variable de espaciado
   text-align: center;
   cursor: pointer;
   display: inline-block;
@@ -58,8 +76,14 @@
 
   &:hover {
     color: $color-hover-enlace; // Color de texto del botón al hacer hover
-    background-color: darken($color-primario, 10%); // Oscurece el color de fondo al hacer hover
-    border-color: darken($color-primario, 10%); // Oscurece el borde al hacer hover
+    background-color: darken(
+      $color-primario,
+      10%
+    ); // Oscurece el color de fondo al hacer hover
+    border-color: darken(
+      $color-primario,
+      10%
+    ); // Oscurece el borde al hacer hover
   }
 
   &:focus {

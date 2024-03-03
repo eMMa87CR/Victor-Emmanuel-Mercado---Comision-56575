@@ -1,1 +1,44 @@
+// Definición de variables
+$color-primario: #007bff; // Azul, por ejemplo
+$color-texto: #fff;
+$color-hover-nav: darken($color-primario, 10%);
+$font-familia-nav: 'Arial', sans-serif;
+$altura-navbar: 80px; // Ajusta según la altura de tu navbar
+
+// Mixin para el hover de los enlaces
+@mixin hover-effect {
+  &:hover, &:focus {
+    color: $color-hover-nav;
+    background-color: transparent;
+  }
+}
+
+// Estilos base para la navbar
+.navbar-custom {
+  background-color: $color-primario;
+  font-family: $font-familia-nav;
+
+  .navbar-brand {
+    img {
+      height: 80px; // Ajusta esto según el tamaño de tu logo
+    }
+  }
+
+  .navbar-toggler {
+    border-color: rgba($color-texto, 0.5);
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+  }
+
+  .navbar-nav .nav-link {
+    color: $color-texto;
+    @include hover-effect;
+  }
+
+  // Ajusta el padding superior del cuerpo cuando se usa navbar-fixed
+  body {
+    padding-top: $altura-navbar;
+  }
+}
 
